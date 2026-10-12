@@ -1,0 +1,22 @@
+:root {
+    --text-main: #fff;
+    --bg-color: #000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    border: 1px solid #fff;
+    border-radius: 14px;
+    background-color: #2c2b2b;
+}
