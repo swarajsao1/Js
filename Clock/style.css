@@ -1,0 +1,88 @@
+:root {
+    --text-main: #fff;
+    --bg-color: #000;
+    --accent: #67e8f9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: min(100%, 440px);
+    min-height: 440px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    background-color: #2c2b2b;
+}
+
+.swap {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#clock,
+#stopwatch {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    color: var(--accent);
+}
+
+#clock h1,
+#stopwatch h1 {
+    color: var(--text-main);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#clock .time,
+#stopwatch .time {
+    display: block;
+    font-size: clamp(28px, 8vw, 48px);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.swap button.active {
+    background-color: #70e085;
+}
+
+.hidden {
+    display: none !important;
+}

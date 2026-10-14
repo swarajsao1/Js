@@ -1,0 +1,82 @@
+:root {
+    --bg-color: #000;
+    --text-main: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: sans-serif;
+}
+
+main {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    padding: auto;
+    font-size: 1.8rem;
+}
+
+.disp {
+    background-color: #a9bff7;
+    text-align: left;
+    padding: 16px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.utilNums,
+.operators {
+    display: flex;
+    flex-direction: column;
+}
+
+.nums {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+  min-width: 90px;
+  margin: 8px 8px;
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #374151;
+  color: white;
+}
+
+/* Style all buttons inside the operators section */
+.operators button {
+    background-color: #496fe1; 
+}
+
+#equalButton {
+    background-color: #53d542;
+}
+
+.utils Button:last-child {
+    background-color: #496fe1; 
+}
+
+.nums Button:nth-child(10) {
+    background-color: #496fe1;    
+}
+
+

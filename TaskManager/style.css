@@ -1,0 +1,37 @@
+:root {
+    --text-main: #fff;
+    --bg-color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 20px;
+}
+
+.container {
+    width: min(100%, 440px);
+    height: 440px;           
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    background-color: #2c2b2b;
+}
+

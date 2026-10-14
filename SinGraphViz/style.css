@@ -1,0 +1,13 @@
+body {
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f5f7fa;
+    }
+canvas {
+      width: 100%;
+      background: white;
+      border: 1px solid #ddd;
+    }
+label { display: block; margin: 16px 0; }

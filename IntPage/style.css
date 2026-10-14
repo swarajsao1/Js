@@ -1,0 +1,60 @@
+:root {
+    --bg-color: #000;
+    --text-main: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Make main a flex container that centers everything vertically and stacks it */
+main {
+    display: flex;
+    flex-direction: column;      
+    align-items: center;         /*Centers horizontally*/
+    justify-content: center;      /*Centers vertically*/   
+    gap: 20px; /* Adds consistent spacing between each section/block */
+    padding: 20px;
+}
+
+/* General styling for each section block so they take full width and center their inner content */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    padding: 20px;
+}
+
+.counter,
+.containerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold; 
+    gap: 10px; 
+}
+
+
+
+.button {
+    background-color: #2563eb;
+    min-height: 5vh;
+    min-width: 10vh;
+    border: 1px solid #5588fe;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+
