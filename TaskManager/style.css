@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    background-color: var(--bg-color);
+    background-color: #f3f4f6;
     color: var(--text-main);
     font-family: sans-serif;
     min-height: 100vh;
@@ -33,5 +33,56 @@ main {
     border: 1px solid #fff;
     border-radius: 14px;
     background-color: #2c2b2b;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border-radius: 14px;
+}
+
+button {
+  padding: 10px 14px;
+  cursor: pointer;
+  background-color: #50df66;
+  border-radius: 14px;
+}
+
+#task-list {
+  padding-left: 20px;
+}
+
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+#task-list li span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+
+.delete-btn {
+    background-color: #ff4d4d; /* Red delete button */
+    color: white;
+    border: none;
+    padding: 4px 8px;          /* Smaller padding */
+    font-size: 12px;           /* Smaller text */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000; /* Darker red on hover */
 }
 

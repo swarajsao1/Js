@@ -10,15 +10,20 @@
     <body>
         <main>
             <div class="container">
-            <h1>To Do</h1>
+            <h1>My To-Do Lists</h1>
             <section>
-                <form>Exercise</form>
-                <form>Date n Time</form>
+                <form id="task-form">
+                    <input type="text" id="task-input" placeholder="Enter a task ...">
+                    <button type="submit">Add Task</button>
+                </form>
             </section>
             <section>
-                <button>Add</button>
-                <button>Delete</button>
-                <button>Completed</button>
+                <ul id="task-lists">
+                    
+                </ul>
+                <p id="tasks-counter">Total tasks: 0</p>
+                <p id="tasks-completed">Completed tasks: 0</p>
+                <p id="tasks-remaining">Remaining tasks: 0</p>
             </section>
         </div>
         </main>
